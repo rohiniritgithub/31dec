@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function mobile()
+		{
+			this.a=20;
+		}
+
+		//this property is defined in function property object so all object will have access property and this is just one single propert for all object it doesnt  make copies for objects separately usually we defind method as a prototype method member rather than prototype variable member
+
+		mobile.prototype.a=10;
+
+		//create a new object using new keyword
+		var lg=new mobile();
+
+		//it first check if lg object have property a as it has so it will return 10 and will stop checking further in the property object
+		console.log(lg.a); //20
+	</script>
+
+</body>
+</html>

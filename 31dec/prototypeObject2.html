@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function mobile()
+		{
+
+		}
+		console.log(mobile)
+
+		//this property is defined in function prototype object so all object will have single  property for all object it doesnt make copies for object all object it doesnt
+
+
+		mobile.prototype.a=10;
+
+		//create a new object using new keyword
+		var lg =new mobile();
+		console.log(lg.a);
+
+	</script>
+
+</body>
+</html>

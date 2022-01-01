@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function mobile()
+		{
+
+		}
+
+		//mobile is the object created by function which is actully function itself
+		console.log(mobile);
+
+		//prototype is a property of mobile which point to the prototype object of mobile
+
+		console.log(mobile.prototype);
+
+		//prototype object  of mobile function
+
+		var lg=new mobile();
+
+		//when you create a new object of that function using new keyword create an object and sets a property named _proto_ which points to its function prototype object
+		console.log(lg._proto_);
+		mobile.prototype
+
+
+		 //varify all stuffs
+
+		 console.log(lg._proto_===mobile.prototype); //true
+	</script>
+
+</body>
+</html>

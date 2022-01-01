@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		class father
+		{
+			show()
+			{
+				return "super class <br>";
+			}
+		}
+
+		class son extends father 
+		{
+			show()
+			{
+				return"sub class <br>";
+			}
+		}
+
+		var s=new son();
+		document.write(s.show()+"<br>");
+
+		var f=new father();
+		document.write(f.show());
+	</script>
+
+</body>
+</html>

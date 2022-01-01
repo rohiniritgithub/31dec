@@ -1,0 +1,52 @@
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		class father
+		{
+			constructor(money)
+			{
+				this.Fmoney=money;
+			}
+			showFmoney()
+			{
+				return this.Fmoney+ "father money <br>";
+			}
+		}
+
+
+		class son extends father
+		{
+			constructor(money)
+			{
+				super(money); //using super we r calling constructor of parent class throgh derived class constructor
+
+				this.a=12;  
+				//var a=12;
+			}
+			showSMoney()
+			{
+				return "son money <br>";
+			}
+
+		}
+
+
+		//we havent creat instatnce of father then how we will pass value to father constructor we can initialize father constructor through son using keyword
+
+
+		var s=new son(3000);
+		document.write(s.showFmoney()+ "<br>");
+		document.write(s.showSMoney() +"<br>");
+		document.write(s.a +"<br>");
+
+		var f=new father(5000);
+		document.write(f.showFmoney())
+
+	</script>
+
+</body>
+</html>

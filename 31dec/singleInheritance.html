@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//super class
+		var mobile=function()
+		{
+			this.a=10;
+		}
+		//prototype property of mobile
+		mobile.prototype.z=30;
+
+		//sub class
+
+		var samsung=function()
+		{
+			//it initialize and call super class constructor wiyhout this you can not access super class property using sub class object
+			mobile.call(this);
+			this.b=20;
+		}
+
+		samsung.prototype=object.create(mobile.prototype);
+		var s=new samsung();
+		document.write(s.a+"<br>");
+		document.write(s.b +"<br>");
+		document.write(s.z+"<br>")
+	</script>
+
+</body>
+</html>

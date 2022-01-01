@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function mobile()
+		{
+
+		}
+		//creating a new object using new keyword
+
+		var lg=new mobile();
+		//this will show undwfined becoz a is neither defined in the function nor in the function prototype
+
+		//it first if lg object have prototype a as it doesnt have it so it go to its property object ponted bt _proto_ and ask him if he has property a as it also doesnt have it so finnally we receive undefined this how it works defined the browser and js engine is the responsible for this task
+
+		console.log(lg.a);
+	</script>
+
+</body>
+</html>
